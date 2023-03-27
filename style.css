@@ -12,6 +12,8 @@
     --text-color: rgb(255, 255, 255);
     --header-base: rgba(0, 8, 20, 0.8);
     --input-base: rgba(83, 19, 54, 0.4);
+    --input-border: rgb(245, 188, 0);
+    --placeholder-color: rgb(209, 209, 209);
 
 }
 
@@ -24,10 +26,6 @@ body {
     background-image: linear-gradient(to top right, var(--background-color-1), var(--background-color-2));
     color: var(--text-color);
 }   
-
-svg path {
-    fill: var(--icon-color);
-}
 
 svg {
     height: 1.5rem;
@@ -65,16 +63,70 @@ svg {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 0.8rem; 
 }
 
 .header .right input {
-    width: 40vw;
+    width: 70%;
     height: 1.5rem;
     background-color: var(--input-base);
+    border: 1px solid var(--input-border);
+    border-radius: 0.5rem;
+    color: var(--text-color);
 }
+
+::placeholder {
+    color: var(--placeholder-color);
+}
+
+.movieIcon, .movieSearch, .notification svg path {
+    fill: var(--icon-color);
+}
+
+.header .notification svg path {
+    fill: var(--icon-color);
+}
+
 
 .sidebar {
     background-color: var(--sidebar-base);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: 450px;  
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+
+.sidebar svg path {
+    fill: var(--icon-color);
+    height: 1rem;
+}
+
+.sidebar .top {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: start;
+    align-content: space-between;
+}
+
+.sidebar .bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.top > *, .bottom > * {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 img {
