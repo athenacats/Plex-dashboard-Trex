@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*
 :root {
     --background-color-1: rgb(0, 29, 61);
     --background-color-2: #1a010d;
+    --card-color: #1a010d;
     --sidebar-base:  rgb(0, 8, 20);
     --icon-color: rgb(245, 188, 0);
     --text-color: rgb(255, 255, 255);
@@ -19,10 +20,23 @@
     --button-text: #1a010d;
     --button-hover-text: rgb(255, 255, 255);
 
-}
+}*/
 
-:root.light {
-
+:root {
+    --background-color-1: #ffffff;
+    --background-color-2: #8ecae6;
+    --card-color: #8ecae6;
+    --sidebar-base:  rgb(33, 158, 188);
+    --icon-color: rgb(255, 217, 0);
+    --text-color: rgb(0, 0, 0);
+    --header-base: rgb(2, 71, 105);
+    --input-base: rgba(142, 202, 230, 0.6);
+    --input-border: rgb(255, 217, 0);
+    --placeholder-color: rgb(209, 209, 209);
+    --button-color: rgb(255, 217, 0);
+    --button-hover-color: rgba(142, 202, 230, 0.7);
+    --button-text: #000000;
+    --button-hover-text: rgb(255, 255, 255);
 }
 
 body {
@@ -230,7 +244,7 @@ img {
 .movie, .book {
     display: flex;
     gap: 10px;
-    background-image: linear-gradient(to right, var(--sidebar-base), var(--background-color-2) ) ;
+    background-image: linear-gradient(to right, var(--sidebar-base), var(--card-color) ) ;
     border-radius: 0.5rem;
     padding: 8px;
 
@@ -279,7 +293,7 @@ img {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 10px;
-    background-image: linear-gradient(to right, var(--sidebar-base), var(--background-color-2) ) ;
+    background-image: linear-gradient(to right, var(--sidebar-base), var(--card-color) ) ;
     border-radius: 0.5rem;
     padding: 8px;
 }
