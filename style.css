@@ -33,6 +33,7 @@ body {
 
 svg {
     height: 1.5rem;
+    cursor: pointer;
 }
 
 .container {
@@ -194,8 +195,56 @@ img {
 .content {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 30px;
+    gap: 20px;
     padding-left: 20px;
     padding-right: 30px;
     padding-bottom: 20px;
+}
+
+.entertainment {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: auto;
+}
+
+.movies {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.movieCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 33%));
+    gap: 10px;
+}
+
+.movie {
+    display: flex;
+    gap: 10px;
+    background-image: linear-gradient(to right, var(--sidebar-base), var(--background-color-2) ) ;
+    border-radius: 0.5rem;
+    padding: 8px;
+
+
+}
+
+.content svg path {
+    fill: var(--icon-color);
+}
+
+.description {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 3px;
+}
+
+.description p {
+    font-size: 0.8rem;
+}
+
+.iconBar {
+    justify-self: flex-start;
 }
