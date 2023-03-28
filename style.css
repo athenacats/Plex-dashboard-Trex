@@ -186,8 +186,16 @@ img {
     align-items: center;
 }
 
-
 .personalRight button:hover {
     background-color: var(--button-hover-color);
     color: var(--button-hover-text);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
 }
