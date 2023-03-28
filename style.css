@@ -105,6 +105,7 @@ svg {
     margin-right: 0.5rem;
     padding: 10px;
     border-radius: 0.5rem;
+    font-size: 0.9rem;
 }
 
 .sidebar svg path {
