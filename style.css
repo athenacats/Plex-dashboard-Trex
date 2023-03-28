@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*
+
 :root {
     --background-color-1: rgb(0, 29, 61);
     --background-color-2: #1a010d;
@@ -20,9 +20,9 @@
     --button-text: #1a010d;
     --button-hover-text: rgb(255, 255, 255);
 
-}*/
+}
 
-:root {
+.lightTheme {
     --background-color-1: #ffffff;
     --background-color-2: #8ecae6;
     --card-color: #8ecae6;
