@@ -84,14 +84,13 @@ svg {
     color: var(--placeholder-color);
 }
 
-.movieIcon, .movieSearch, .notification svg path {
+.movieIcon, .theme, .notification svg path {
     fill: var(--icon-color);
 }
 
 svg.notification path {
     fill: var(--icon-color);
 }
-
 
 .sidebar {
     background-color: var(--sidebar-base);
