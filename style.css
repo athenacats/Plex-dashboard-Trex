@@ -150,6 +150,7 @@ img {
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 30px;
+    font-size: 0.9rem;
 }
 
 .personalLeft {
@@ -178,7 +179,7 @@ img {
 .personalRight button {
     background-color: var(--button-color);
     padding: 8px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--button-text);
     border: 1px solid var(--background-color-2);
     border-radius: 0.5rem;
