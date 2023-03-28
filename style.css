@@ -207,6 +207,7 @@ img {
     display: grid;
     grid-template-columns:1fr;
     grid-template-rows: auto;
+    gap: 10px;
 }
 
 .movies, .audiobooks {
@@ -218,7 +219,7 @@ img {
 
 .movieCards, .bookCards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 33%));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
 }
 
@@ -253,4 +254,60 @@ img {
 
 .iconBar {
     justify-self: flex-start;
+}
+
+
+
+.latestNews, .trending {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.trending {
+    margin-top: 40px;
+    
+}
+
+.upperLatestNews, .lowerTrending {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    background-image: linear-gradient(to right, var(--sidebar-base), var(--background-color-2) ) ;
+    border-radius: 0.5rem;
+    padding: 8px;
+}
+
+.upperLatestNews p {
+    font-size: 0.8rem;
+}
+
+.upperLatestNews h3 {
+    font-size: 1rem;
+}
+
+.lowerTrending h3 {
+    font-size: 0.8rem;
+}
+
+.latestNewsChild {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.trendingChild img {
+    height: 120px;
+    width: auto;
+    margin: auto;
+}
+
+.trendingChild {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-self: center;
+    align-self: center;
 }
