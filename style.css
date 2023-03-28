@@ -135,6 +135,11 @@ svg {
     justify-content: flex-start;
 }
 
+.sidebarNames, .left .title, .userName, img, .description h3,
+    .latestNewsChild h3, .trendingChild h3 {
+    cursor: pointer;
+}
+
 img {
     height: 120px;
 }
